@@ -1,0 +1,132 @@
+
+/* select the font for the whole body */
+body{
+    font-family: 'Lato', sans-serif;
+    background-image: url(../assets/pattern.png);
+    /* to change the background pattern size */
+    background-size: 500px;
+}
+
+/* reset the margin and padding to set everything to default*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* style common .card class */
+.card {
+ max-width: 600px;
+ margin: 20px auto;
+ padding: 20px;
+
+ /* to make round corners */
+ border-radius: 10px;
+
+ /* to create shadows */
+ box-shadow: 5px 10px 15px rgba(0,0,0, 0.3);
+}
+
+
+/* to change all h1 styles */
+.card h1 {
+  margin-bottom: 20px;
+  /* to make h1 bolder */
+  font-weight: 800;
+}
+
+.card p {
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.card-economy h1 {
+    color: salmon;
+}
+
+.card-economy a {
+    background-color: salmon;
+}
+
+/* changes the color when you hover over the button */
+.card-economy a:hover {
+    background-color: rgb(229, 98, 83);
+}
+
+/* changes the color when you click on the button */
+.card-economy a:active {
+    background-color: rgb(78, 10, 2);
+}
+
+
+.card-luxury h1 {
+    color: magenta;
+}
+
+.card-luxury a {
+    background-color: magenta;
+}
+
+.card-luxury a:hover {
+    background-color: rgb(208, 6, 208);
+}
+
+.card-luxury a:active {
+    background-color: rgb(122, 3, 122);
+}
+
+.card-family h1 {
+    color: chocolate;
+}
+
+.card-family a {
+    background-color: chocolate;
+}
+
+.card-family a:hover {
+    background-color: rgb(184, 89, 21);
+}
+
+.card-family a:active {
+    background-color: rgb(127, 58, 9);
+}
+
+
+a {
+display: inline-block;
+background-color: aqua;
+text-decoration: none;
+color: #fff;
+padding: 10px 20px;
+border-radius: 5px;
+font-size: 18px;
+margin-top: 5px;
+}
+
+/* add pictures */
+.card-economy {
+    background: white url(../assets/economic-car.png);
+    background-repeat: no-repeat;
+    background-position: right;
+
+    /* to replace all 3 above lines with one:  background: url(../assets/economic-car.png) no-repeat right;*/
+    /* to make the image visible */
+    background-size: 200px;
+}
+
+.card-luxury {
+    background: white url(../assets/luxury-car.png) no-repeat right;
+    /* to make the image visible */
+    background-size: 200px;
+}
+
+.card-family {
+    background: white url(../assets/family-car.png) no-repeat right;
+    /* to make the image visible */
+    background-size: 200px;
+}
+
+/* to make extra space between text and arrow */
+i {
+    margin-right: 5px;
+}
